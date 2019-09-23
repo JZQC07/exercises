@@ -13,19 +13,21 @@ namespace metoderuppg4
             double summa = 0;
             double moms;
             bool cancel = false;
+            double dinmoms;
             do
             {
-                    Console.WriteLine("Ange Summa.");
+                Console.WriteLine("Ange Summa.");
                 try
                 {
                     summa = Convert.ToDouble(Console.ReadLine());
-                    moms = 1.25 * summa;
-                    Console.WriteLine("Summan + moms är: {0}", moms);
+                    Console.WriteLine("Ange moms i %");
+                    moms = Convert.ToDouble(Console.ReadLine());
+                    dinmoms = summa * (moms / 100.0 +1); 
+                    Console.WriteLine("Summan + moms är: {0}", dinmoms);
                 }
                 catch
                 {
                     Console.WriteLine("Mata endast in nummer.");
-                    
                 }
                 Console.WriteLine("Vill du mata in en ny summa?");
                 Console.WriteLine("[J] / [N]");
