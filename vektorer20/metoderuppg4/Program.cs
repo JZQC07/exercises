@@ -49,7 +49,6 @@ namespace metoderuppg4
                     Console.WriteLine("Du gjorde en felaktig inmatning.");
                 }
             } while(cancel == false);
-
         }
     }
 }

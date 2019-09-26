@@ -14,7 +14,7 @@ namespace Vaderkvanen
         static void lägg_till()
         {
             bool ext = true;
-            do
+            while(ext)
             {
                 Console.WriteLine("Mata in temperatur som skall sparas. Annars mata in [0] för att gå tillbaka.");
                 int val = Convert.ToInt32(Console.ReadLine());
@@ -27,7 +27,7 @@ namespace Vaderkvanen
                     myVader.Add(val);
                 }
             }
-            while(ext); 
+             
         }
         static void ta_bort()
         {
